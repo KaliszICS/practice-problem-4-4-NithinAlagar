@@ -4,6 +4,9 @@ public class PracticeProblem {
 
 	}
 	public static boolean isPrime(int num){
+		if (num == 1 || num == 0){
+			return true;
+		}
 	for (int i = 0; i < num; i++){
 		if (i%2==0){
 			return false;
