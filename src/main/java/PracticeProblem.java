@@ -7,15 +7,15 @@ public class PracticeProblem {
 		if (num == 1 || num == 0){
 			return true;
 		}
-	for (int i = 0; i < num; i++){
-		if (i%2==0){
+	for (int i = 2; i < num; i++){
+		if (num%i==0){
 			return false;
 		}
 	}
 	return true;
 	
 	}
-	public static String hasCapital(String word){
+	public static boolean hasCapital(String word){
 	for (int i = 0; i < word.length() - 1; i++ ){
 		if (word.substring(i, i + 1).toUpperCase() == word.substring(i, i + 1)){
 			return true;
