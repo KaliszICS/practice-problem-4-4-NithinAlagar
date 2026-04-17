@@ -19,15 +19,15 @@ public class PracticeProblem {
     			return false;
     		}
 	    }   
-	return true;
-	
+		return true;
+		
 	}
 	public static boolean hasCapital(String word){
-	for (int i = 0; i <= word.length() - 1; i++ ){
-		if (word.substring(i, i + 1).toUpperCase().equals(word.substring(i, i + 1))){
-			return true;
+		for (int i = 0; i <= word.length() - 1; i++ ){
+			if (word.substring(i, i + 1).toUpperCase().equals(word.substring(i, i + 1))){
+				return true;
+			}
 		}
+		return false;
 	}
-	return false;
-}
 }
