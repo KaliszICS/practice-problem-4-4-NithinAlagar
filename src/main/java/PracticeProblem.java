@@ -17,7 +17,7 @@ public class PracticeProblem {
 	}
 	public static boolean hasCapital(String word){
 	for (int i = 0; i < word.length() - 1; i++ ){
-		if (word.substring(i, i + 1).toUpperCase() == word.substring(i, i + 1)){
+		if (word.substring(i, i).toUpperCase() == word.substring(i, i)){
 			return true;
 		}
 	}
